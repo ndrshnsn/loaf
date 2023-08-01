@@ -19,7 +19,7 @@ module Loaf
       @url   = url || raise_url_error
       @match = options.fetch(:match, Loaf.configuration.match)
       @frame = options.fetch(:frame, Loaf.configuration.frame)
-      @turbo_disabled = options.fetch(:turbo_disabled, Load.configuration.turbo_disabled)
+      @turbo_disabled = options.fetch(:turbo_disabled, Loaf.configuration.turbo_disabled)
       freeze
     end
 
