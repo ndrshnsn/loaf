@@ -6,7 +6,7 @@ module Loaf
       :locales_path,
       :match,
       :frame,
-      :turbo_disabled
+      :turbo
     ].freeze
 
     attr_accessor(*VALID_ATTRIBUTES)
@@ -17,7 +17,7 @@ module Loaf
 
     DEFAULT_FRAME = nil
 
-    DEFAULT_TURBO_DISABLED = true
+    DEFAULT_TURBO = nil
 
     # Setup this configuration
     #
