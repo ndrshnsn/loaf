@@ -14,6 +14,8 @@ module Loaf
 
     DEFAULT_MATCH = :inclusive
 
+    DEFAULT_FRAME = nil
+
     # Setup this configuration
     #
     # @api public
