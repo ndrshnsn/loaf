@@ -25,8 +25,12 @@ module Loaf
       @current
     end
 
+    def frame?
+      @frame = frame
+    end
+
     def to_ary
-      [@name, @path, frame, @current]
+      [@name, @path, @frame, @current]
     end
     alias to_a to_ary
   end # Breadcrumb
