@@ -14,7 +14,7 @@ module Loaf
       new(*args)
     end
 
-    def initialize(name, path, current)
+    def initialize(name, path, current, frame)
       @name = name
       @path = path
       @current = current
