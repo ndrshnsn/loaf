@@ -10,10 +10,13 @@ module Loaf
 
     attr_reader :match
 
+    attr_reader :frame
+
     def initialize(name, url, options = {})
       @name  = name || raise_name_error
       @url   = url || raise_url_error
       @match = options.fetch(:match, Loaf.configuration.match)
+      @frame = options.fetch(:frame, nil)
       freeze
     end
 

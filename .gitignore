@@ -12,10 +12,6 @@ doc/
 lib/bundler/man
 pkg
 rdoc
-spec/reports
-spec/rails_app/tmp
-spec/rails_app/db
-spec/rails_app/log
 tmp
 *.bundle
 *.so
