@@ -16,7 +16,7 @@ module Loaf
       @name  = name || raise_name_error
       @url   = url || raise_url_error
       @match = options.fetch(:match, Loaf.configuration.match)
-      @frame = options.fetch(:frame, nil)
+      @frame = options.fetch(:frame, Loaf.configuration.frame)
       freeze
     end
 

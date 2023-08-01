@@ -6,6 +6,8 @@ module Loaf
 
     attr_reader :path
 
+    attr_reader :frame
+
     alias url path
 
     def self.[](*args)
@@ -16,6 +18,7 @@ module Loaf
       @name = name
       @path = path
       @current = current
+      @frame = frame
       freeze
     end
 
@@ -24,7 +27,7 @@ module Loaf
     end
 
     def to_ary
-      [@name, @path, @current]
+      [@name, @path, @frame, @current]
     end
     alias to_a to_ary
   end # Breadcrumb
