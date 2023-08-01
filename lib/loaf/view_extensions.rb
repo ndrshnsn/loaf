@@ -53,8 +53,9 @@ module Loaf
         name = title_for(crumb.name)
         path = url_for(_expand_url(crumb.url))
         current = current_crumb?(path, options.fetch(:match) { crumb.match })
+        frame = crumb.frame
 
-        yield(Loaf::Breadcrumb[name, path, current])
+        yield(Loaf::Breadcrumb[name, path, current, frame])
       end
     end
 
