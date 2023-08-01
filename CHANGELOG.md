@@ -1,5 +1,11 @@
 # Change log
 
+## [v0.10.1] - 2023-08-01
+
+### Changed
+* Removed rspec stuff and version checking
+* Added frame attr_reader to crumb.rb for use with turbo frames
+
 ## [v0.10.0] - 2020-11-21
 
 ### Changed
