@@ -4,7 +4,8 @@ module Loaf
   class Configuration
     VALID_ATTRIBUTES = [
       :locales_path,
-      :match
+      :match,
+      :frame
     ].freeze
 
     attr_accessor(*VALID_ATTRIBUTES)
