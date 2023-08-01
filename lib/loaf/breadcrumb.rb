@@ -14,11 +14,10 @@ module Loaf
       new(*args)
     end
 
-    def initialize(name, path, current, frame)
+    def initialize(name, path, current)
       @name = name
       @path = path
       @current = current
-      @frame = frame
       freeze
     end
 
@@ -27,7 +26,7 @@ module Loaf
     end
 
     def to_ary
-      [@name, @path, @frame, @current]
+      [@name, @path, frame, @current]
     end
     alias to_a to_ary
   end # Breadcrumb
