@@ -8,17 +8,20 @@ module Loaf
 
     attr_reader :frame
 
+    attr_reader :turbo_disabled
+
     alias url path
 
     def self.[](*args)
       new(*args)
     end
 
-    def initialize(name, path, current, frame)
+    def initialize(name, path, current, frame, turbo_disabled)
       @name = name
       @path = path
       @current = current
       @frame = frame
+      @turbo_disabled = turbo_disabled
       freeze
     end
 
@@ -27,7 +30,7 @@ module Loaf
     end
 
     def to_ary
-      [@name, @path, @current, @frame]
+      [@name, @path, @current, @frame, @turbo_disabled]
     end
     alias to_a to_ary
   end # Breadcrumb

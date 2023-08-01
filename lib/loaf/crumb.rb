@@ -12,11 +12,14 @@ module Loaf
 
     attr_reader :frame
 
+    attr_reader :turbo_disabled
+
     def initialize(name, url, options = {})
       @name  = name || raise_name_error
       @url   = url || raise_url_error
       @match = options.fetch(:match, Loaf.configuration.match)
       @frame = options.fetch(:frame, Loaf.configuration.frame)
+      @turbo_disabled = options.fetch(:turbo_disabled, Load.configuration.turbo_disabled)
       freeze
     end
 

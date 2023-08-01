@@ -1,11 +1,12 @@
 # Change log
 
-## [v0.10.2] - 2023-08-01
+## [v0.10.7.1] - 2023-08-01
 
 ### Changed
 * Removed rspec stuff and version checking
 * Removed bin
 * Added frame attr_reader to crumb.rb for use with turbo frames
+* Added option turbo_disabled which will disable turbo in breadcrumb link and reload page
 
 ## [v0.10.0] - 2020-11-21
 

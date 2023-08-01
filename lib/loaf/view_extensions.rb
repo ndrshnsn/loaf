@@ -54,8 +54,9 @@ module Loaf
         path = url_for(_expand_url(crumb.url))
         current = current_crumb?(path, options.fetch(:match) { crumb.match })
         frame = crumb.frame
+        turbo_disabled = crumb.turbo_disabled
 
-        yield(Loaf::Breadcrumb[name, path, current, frame])
+        yield(Loaf::Breadcrumb[name, path, current, frame, turbo_disabled])
       end
     end
 
