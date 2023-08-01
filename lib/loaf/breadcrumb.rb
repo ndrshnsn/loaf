@@ -6,18 +6,15 @@ module Loaf
 
     attr_reader :path
 
-    attr_reader :frame
-
     alias url path
 
     def self.[](*args)
       new(*args)
     end
 
-    def initialize(name, path, frame, current)
+    def initialize(name, path, current)
       @name = name
       @path = path
-      @frame = frame
       @current = current
       freeze
     end
